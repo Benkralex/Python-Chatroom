@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5639aade-c289-4d37-8de1-5984368b86fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/chatroom.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OLD/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OLD/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_networking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +35,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Python.client.executor": "Run",
     "Python.client_networking.executor": "Run",
     "Python.client_new_layout.executor": "Run",
     "Python.server.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Benkralex/Documents/Projekte/Python/chatroom",
+    "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
