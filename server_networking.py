@@ -2,9 +2,6 @@ import socket
 import threading
 import datetime
 
-from OLD.server import client_names
-
-
 def log(message, log_type='INFO'):
     full_msg = f'[{str(datetime.datetime.now().strftime('%d.%m.%Y %H:%M:%S'))}] [{str(log_type)}] {str(message)}\n'
     print(full_msg)
