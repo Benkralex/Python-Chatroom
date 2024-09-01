@@ -1,1 +1,0 @@
-[2024-09-01 09:33:17.905050] [INFO] Server gestartet auf localhost:5555

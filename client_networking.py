@@ -33,11 +33,12 @@ class ClientNetworking:
         self.client_socket.send(f"{self.username}|{self.message_color}".encode('utf-8'))
         threading.Thread(target=self.receive_message).start()
         self.update_status("Verbunden", "green")
+        #self.client_socket.send("USERS_LIST_REQUEST".encode('utf-8'))
         return self.client_socket
 
     def send_message(self, message):
         if self.client_socket:
-            full_message = f"{self.username}: {message}|{self.message_color}"
+            full_message = f"MESSAGE|{message}"
             self.client_socket.send(full_message.encode('utf-8'))
 
     def receive_message(self):
@@ -46,11 +47,13 @@ class ClientNetworking:
                 message = self.client_socket.recv(1024).decode('utf-8')
                 if not message:
                     continue
-                print(f"Empfangene Nachricht: {message}")  # Debugging line
-                if message.startswith("USERS_LIST:"):
-                    self.update_users_list(message.replace("USERS_LIST:", ""))
+                print(f"Empfangene Nachricht: {message}")
+                if message.startswith("USERS_LIST"):
+                    self.update_users_list(message.replace("USERS_LIST|", ""))
+                elif message.startswith("RECEIVE_MESSAGE"):
+                    self.display_message(message.replace("RECEIVE_MESSAGE|", ""))
                 else:
-                    self.display_message(message)
+                    print(f"Ungültige Nachricht: {message}")
             except Exception as e:
                 print(f"Fehler beim Empfangen der Nachricht: {str(e)}")
                 self.close_connection()
@@ -58,6 +61,7 @@ class ClientNetworking:
 
     def close_connection(self):
         if self.client_socket:
+            self.client_socket.send(f"DISCONNECT|{self.username}".encode('utf-8'))
             self.client_socket.close()
             self.client_socket = None
             self.update_status("Nicht verbunden", "red")
@@ -67,7 +71,7 @@ class ClientNetworking:
 
     def change_color(self, new_color):
         if self.client_socket:
-            self.client_socket.send(f"COLOR_CHANGE:{self.username}|{new_color}".encode('utf-8'))
+            self.client_socket.send(f"COLOR_CHANGE|{new_color}".encode('utf-8'))
 
     def set_ctk_elements(self, msg_box, msg_button, msg_display, online_frame, status_label, con_ip, con_port, con_username, con_color):
         self.msg_box = msg_box
