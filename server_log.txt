@@ -1,6 +1,1 @@
-[01.09.2024 11:24:50] [INFO] Server gestartet auf localhost:50000
-[01.09.2024 11:25:26] [INFO] Neue Verbindung: ('127.0.0.1', 50638)
-[01.09.2024 11:25:26] [INFO] Broadcasting: b'Benjamin hat den Chat betreten.|#000FF0'
-[01.09.2024 11:25:26] [INFO] Aktualisiere Benutzerliste...
-[01.09.2024 11:25:36] [INFO] Aktualisiere Benutzerliste...
-[01.09.2024 11:25:40] [INFO] Broadcasting: b'Benjamin: Hi|#00F0F0'
+
