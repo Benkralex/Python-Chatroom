@@ -1,8 +1,14 @@
-##Install
-- Clone/Download Repository
-Windows:
-- Run client.bat to start the Client
-- Run server.bat to start the Server
-Linux:
-- Run client.sh to start the Client
-- Run server.sh to start the Server
+## Installation
+
+### 1. Repository klonen oder herunterladen
+Laden Sie das Repository herunter oder klonen Sie es auf Ihren lokalen Rechner.
+
+### 2. Anwendung starten
+
+#### Windows:
+- Führen Sie `client.bat` aus, um den Client zu starten.
+- Führen Sie `server.bat` aus, um den Server zu starten.
+
+#### Linux:
+- Führen Sie `client.sh` aus, um den Client zu starten.
+- Führen Sie `server.sh` aus, um den Server zu starten.
