@@ -1,1 +1,2 @@
-./.venv/Scripts/python.exe ./server.py
+.venv\Scripts\python.exe server.py
+pause

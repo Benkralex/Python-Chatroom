@@ -1,1 +1,2 @@
-./.venv/Scripts/python.exe ./client.py
+.venv\Scripts\python.exe client.py
+pause
