@@ -1,5 +1,4 @@
-import customtkinter as ctk
-import client_networking as cn
+from client_networking import *
 
 def connect():
     cn.update_status("Nicht verbunden", "red")
@@ -37,7 +36,7 @@ def color_change():
         print(f"Farbe ändern zu {new_color}")
         cn.change_color(new_color)
 
-cn = cn.ClientNetworking()
+cn = ClientNetworking()
 
 ctk.set_appearance_mode("System")
 ctk.set_default_color_theme("blue")
